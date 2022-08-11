@@ -1,0 +1,38 @@
+/* styles go here */
+fieldset {
+  min-height: 10px;
+  margin: 20px 2px;
+}
+
+.input-block {
+  display: block;
+  margin: 10px 0;
+}
+
+.age-input {
+  width: 65px;
+}
+
+fieldset :first-child + :not(legend) {
+  margin-top: 0;
+}
+
+fieldset label:last-child {
+  margin-bottom: 0;
+}
+
+.date-input {
+  width: 150px;
+}
+
+select {
+  overflow: hidden;
+}
+
+input[type="range"] {
+  background-color: black;
+}
+
+fieldset:first-child {
+  margin-top: 0;
+}
