@@ -21,6 +21,10 @@ fieldset label:last-child {
   margin-bottom: 0;
 }
 
+.date-input {
+  width: 150px;
+}
+
 select {
   overflow: hidden;
 }
@@ -31,8 +35,4 @@ input[type="range"] {
 
 fieldset:first-child {
   margin-top: 0;
-}
-
-.date-input {
-  width: 150px;
 }
