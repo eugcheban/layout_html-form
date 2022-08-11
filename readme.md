@@ -1,5 +1,5 @@
 # HTML form
-Replace `eugcheban` with your Github username and copy the links to Pull Request description:
+Replace `<your name>` with your Github username and copy the links to Pull Request description:
 - [DEMO LINK](https://eugcheban.github.io/layout_html-form/)
 - [TEST REPORT LINK](https://eugcheban.github.io/layout_html-form/report/html_report/)
 
