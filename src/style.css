@@ -1,5 +1,5 @@
 /* styles go here */
-fieldset {
+.field-quiz {
   min-height: 10px;
   margin: 20px 2px;
 }
@@ -9,26 +9,18 @@ fieldset {
   margin: 10px 0;
 }
 
-fieldset :first-child + :not(legend) {
+.field-quiz :first-child + :not(legend) {
   margin-top: 0;
 }
 
-fieldset label:last-child {
+.field-quiz label:last-child {
   margin-bottom: 0;
 }
 
-.date-input {
-  width: 150px;
-}
-
-select {
+.select-quiz {
   overflow: hidden;
 }
 
-input[type="range"] {
-  background-color: black;
-}
-
-fieldset:first-child {
+.field-quiz:first-child {
   margin-top: 0;
 }

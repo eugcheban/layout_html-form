@@ -15,31 +15,28 @@
     <form
       id="formAbout"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
-      method="post"
+      method="get"
     >
-      <fieldset class="personal-information">
+      <fieldset class="field-quiz">
         <legend>Personal information</legend>
         <label class="input-block">
           Surname:
           <input
             type="text"
             name="surname"
-            id="inputSurname"
             autocomplete="off"
             required
           >
         </label>
-        <label for="inputName" class="input-block">
+        <label class="input-block">
           Name:
           <input
             type="text"
-            name="name"
-            id="inputName"
             autocomplete="off"
             required
           >
         </label>
-        <label for="inputAge" class="input-block">
+        <label class="input-block">
           How old are You?
           <input
             type="number"
@@ -47,95 +44,90 @@
             name="age"
             min="1"
             max="100"
-            id="inputAge"
             value="12"
             required
           >
         </label>
-        <label for="dateOfBirth" class="input-block">
+        <label class="input-block">
           Full date of birth:
           <input
             type="date"
             placeholder="mm / dd / yyyy"
             class="date-input"
             name="dateOfBirth"
-            id="dateOfBirth"
             autocomplete="off"
             required
           >
         </label>
-        <label for="inputTermOfAgreement" class="input-block">
+        <label class="input-block">
           I accept the term of the agreement
           <input
             type="checkbox"
             name="termOfAgreement"
-            id="inputTermOfAgreement"
             required
           >
         </label>
       </fieldset>
-      <fieldset class="registration">
+      <fieldset class="field-quiz">
         <legend>Registration</legend>
-        <label for="inputEmail" class="input-block">
+        <label class="input-block">
           E-mail:
           <input
             type="email"
             placeholder="email@example.com"
             name="email"
-            id="inputEmail"
             required
           >
         </label>
-        <label for="inputPassword" class="input-block">
+        <label class="input-block">
           Password:
           <input
             type="password"
             name="password"
-            id="inputPassword"
             required
           >
         </label>
       </fieldset>
-      <fieldset class="quiz">
+      <fieldset class="field-quiz">
         <legend>An interesting fact about you!</legend>
         <label class="input-block" name="loveCats">
           Do you love cats?
-          <input
-            type="radio"
-            name="loveCats"
-            value="yes"
-            id="inputCatsYes"
-          >
-          <label for="inputCatsYes">Yes</label>
-          <input
-            type="radio"
-            name="loveCats"
-            value="no"
-            id="inputCatsNo"
-          >
-          <label for="inputCatsNo">No</label>
+          <label>
+            <input
+              type="radio"
+              name="loveCats"
+              value="yes"
+            >
+          Yes
+          </label>
+          <label>
+            <input
+              type="radio"
+              name="loveCats"
+              value="no"
+            >
+          No
+          </label>
         </label>
-        <label for="inputFavoriteColor" class="input-block">
+        <label class="input-block">
           What is your favorite color?
           <input
             type="color"
             name="color"
-            id="inputFavoriteColor"
           >
         </label>
-        <label for="timeToBed" class="input-block">
+        <label class="input-block">
           What time do you go to bed?
           <input
             type="time"
             name="timeToBed"
-            id="timeToBed"
           >
         </label>
-        <label for="brandOfCars" class="input-block">
+        <label class="input-block">
           What are your favorite brand of cars?
           <select
+            class="select-quiz"
             name="brandOfCars"
-            id="brandOfCars"
             multiple
           >
             <option value="BMV">BMW</option>
@@ -143,7 +135,7 @@
             <option value="Lada">Lada</option>
           </select>
         </label>
-        <label for="rateWork" class="input-block">
+        <label class="input-block">
           How do you rate our work?
           <input
             type="range"
@@ -151,17 +143,15 @@
             value="0"
             min="0"
             max="10"
-            id="rateWork"
           >
         </label>
       </fieldset>
-      <fieldset class="additional-info">
+      <fieldset class="field-quiz">
         <legend>Additional info:</legend>
-        <label for="comments" class="input-block">
+        <label class="input-block">
           Comments:
           <textarea
             name="comments"
-            id="comments"
             cols="20"
             rows="2"
             class="text-area"
@@ -169,9 +159,9 @@
             maxlength="200"
           ></textarea>
         </label>
-        <label for="recommendsUs" class="input-block">
+        <label class="input-block">
           Would you recommend us?
-          <select name="recommendUs" id="recommendsUs">
+          <select class="select-quiz" name="recommendUs">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>
