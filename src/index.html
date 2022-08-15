@@ -13,7 +13,6 @@
   <body>
     <script type="text/javascript" src="./main.js"></script>
     <form
-      id="formAbout"
       action="https://mate-academy-form-lesson.herokuapp.com/create-application"
       method="get"
     >
@@ -40,7 +39,6 @@
           How old are You?
           <input
             type="number"
-            class="age-input"
             name="age"
             min="1"
             max="100"
@@ -52,8 +50,6 @@
           Full date of birth:
           <input
             type="date"
-            placeholder="mm / dd / yyyy"
-            class="date-input"
             name="dateOfBirth"
             autocomplete="off"
             required
@@ -125,11 +121,7 @@
         </label>
         <label class="input-block">
           What are your favorite brand of cars?
-          <select
-            class="select-quiz"
-            name="brandOfCars"
-            multiple
-          >
+          <select name="brandOfCars" multiple>
             <option value="BMV">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Lada">Lada</option>
@@ -154,14 +146,13 @@
             name="comments"
             cols="20"
             rows="2"
-            class="text-area"
             minlength="1"
             maxlength="200"
           ></textarea>
         </label>
         <label class="input-block">
           Would you recommend us?
-          <select class="select-quiz" name="recommendUs">
+          <select name="recommendUs">
             <option value="yes">yes</option>
             <option value="no">no</option>
           </select>

@@ -1,26 +1,10 @@
 /* styles go here */
-.field-quiz {
+.field-quiz:not(:last-child) {
   min-height: 10px;
-  margin: 20px 2px;
+  margin: 0 2px 20px;
 }
 
-.input-block {
+.input-block:not(:last-child) {
   display: block;
-  margin: 10px 0;
-}
-
-.field-quiz :first-child + :not(legend) {
-  margin-top: 0;
-}
-
-.field-quiz label:last-child {
-  margin-bottom: 0;
-}
-
-.select-quiz {
-  overflow: hidden;
-}
-
-.field-quiz:first-child {
-  margin-top: 0;
+  margin-bottom: 10px;
 }
